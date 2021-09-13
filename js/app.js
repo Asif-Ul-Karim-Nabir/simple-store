@@ -5,7 +5,7 @@ const loadProducts = () => {
 
 // show all product in UI 
 const showProducts = (products) => {
-  console.log(products);
+  // console.log(products);
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
     const image = product.image; // change images to image
@@ -15,7 +15,7 @@ const showProducts = (products) => {
       <div>
     <img class="product-image" src=${image}></img>
       </div>
-      <h4>${product.title}</h4>
+      <h5>${product.title}</h5>
       <p>Category: ${product.category}</p>
       <h6>Ratings: ${product.rating.rate}</h6>
       <h6>Reviews: (${product.rating.count})</h6>
